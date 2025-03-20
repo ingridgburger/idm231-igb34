@@ -1,25 +1,25 @@
 @font-face {
+    font-display: swap;
     font-family: 'Oswald';
-    src: url('./fonts/Oswald.ttf') format('truetype'); 
+    font-style: normal;
     font-weight: 200 700;
-    font-style: normal;
-    font-display: swap;
+    src: url('./fonts/Oswald.ttf') format('truetype'); 
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100 900;
     src: url('./fonts/DMSans.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: 'DM Sans';
-    src: url('./fonts/DMSans_Italic.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
     font-display: swap;
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 100 900;
+    src: url('./fonts/DMSans_Italic.ttf') format('truetype');
 }
 
 :root {
@@ -35,17 +35,17 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-sans-serif), Arial, Helvetica, sans-serif;
-    text-align: center;
+    background-color: var(--background-color);
+    font-family: var(--font-sans-serif);
     margin: 0;
     padding: 30px;
-    background-color: var(--background-color);
+    text-align: center;
 }
 
 h1 {
@@ -57,29 +57,29 @@ h1 {
 }
 
 .input-container {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     gap: 10px; 
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 input[type="date"] {
-    padding: 10px;
-    font-size: 16px;
     border: 1px solid var(--accent);
     border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
 }
 
 button {
     background-color: var(--accent); 
+    border: none; 
+    border-radius: 12px; 
     color: var(--light); 
+    cursor: pointer;
     font-family: var(--font-sans-serif);
     font-size: 16px;
     padding: 10px 20px;
-    border: none; 
-    border-radius: 12px; 
-    cursor: pointer;
     transition: background-color 0.3s ease; 
 }
 
@@ -89,59 +89,58 @@ button:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     gap: 8px;
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     margin: 1rem auto;
     max-width: 1000px;
 }
 
 .grid-container img {
+    border-radius: 8px;
     cursor: pointer;
-    width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 8px;
+    width: 200px;
 }
 
 .description-box {
     background-color: var(--accent);
-    color: var(--light);
-    padding: 20px;
     border-radius: 8px;
-    margin-top: 1.5rem;
-    max-width: 600px;
+    color: var(--light);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1.5rem;
+    max-width: 600px;
+    padding: 20px;
 }
 
 .description-box h2 {
-    font-family: var(--font-bold);
-    margin-bottom: 10px;
     color: var(--light);
+    font-family: var(--font-bold);
     font-size: 22px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
+    height: 100%;
     justify-content: center;
-    align-items: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .modal-content {
     background: var(--light);
-    padding: 20px;
-    text-align: center;
     border-radius: 8px;
     margin: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .modal-content p {
@@ -150,27 +149,25 @@ button:hover {
 
 .button-help {
     background-color: transparent;
-    color: var(--accent);
     border: 2px solid var(--accent);
+    border-radius: 12px;
+    color: var(--accent);
+    cursor: pointer;
     font-family: var(--font-sans-serif);
     font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-bottom: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
 
 .button-close {
     background-color: transparent;
-    color: var(--accent);
     border: 2px solid var(--accent);
+    border-radius: 12px;
+    color: var(--accent);
+    cursor: pointer;
     font-family: var(--font-sans-serif);
     font-size: 16px;
     padding: 10px 20px;
-    border-radius: 12px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-
