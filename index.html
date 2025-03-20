@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader Joe's Sauce Zodiac</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Which Trader Joe's Sauce Matches Your Zodiac Sign?</h1>
+    
+    <button id="help-button" class="button-help">Help</button>
+
+    <div class="input-container">
+        <label for="birthday">Enter Your Birthday:</label>
+        <input type="date" id="birthday">
+        <button id="find-sign-button">Find My Sign!</button>
+    </div>
+
+    <div class="grid-container">
+        <img src="./images/Aries/Aries.png" alt="Aries">
+        <img src="./images/Taurus/Taurus.png" alt="Taurus">
+        <img src="./images/Gemini/Gemini.png" alt="Gemini">
+        <img src="./images/Cancer/Cancer.png" alt="Cancer">
+        <img src="./images/Leo/Leo.png" alt="Leo">
+        <img src="./images/Virgo/Virgo.png" alt="Virgo">
+        <img src="./images/Libra/Libra.png" alt="Libra">
+        <img src="./images/Scorpio/Scorpio.png" alt="Scorpio">
+        <img src="./images/Sagittarius/Sagittarius.png" alt="Sagittarius">
+        <img src="./images/Capricorn/Capricorn.png" alt="Capricorn">
+        <img src="./images/Aquarius/Aquarius.png" alt="Aquarius">
+        <img src="./images/Pisces/Pisces.png" alt="Pisces">
+    </div>
+
+    <div id="help-modal" class="modal">
+        <div class="modal-content">
+            <p>Enter your birthday and click "Find My Sign!" to see which Trader Joe's sauce matches your zodiac sign.</p>
+            <p>You can also click on a zodiac sign's image to see its details.</p>
+            <button id="close-help" class="button-close">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
